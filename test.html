@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bar Chart Example with billboard.js</title>
+    <style>
+        #multilinedTitle .bb-title tspan:first-child { font-size: 17px; font-weight: bold; }
+    </style>
+    <link rel="stylesheet" href="https://unpkg.com/billboard.js/dist/theme/insight.css">
+    <!-- Step 1) Load D3.js -->
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+
+    <!-- Step 2) Load billboard.js -->
+    <script src="https://unpkg.com/billboard.js"></script>
+
+    <!-- Load with base style -->
+    <link rel="stylesheet" href="https://unpkg.com/billboard.js/dist/billboard.css">
+</head>
+<body>
+    <div id="barChart"></div>
+    <div id="lineChart"></div>
+    <div id="pieChart"></div>
+    <select id="selDataset" onchange="OnChange(this.value)">
+        <option value="2015">2015</option>
+        <option value="2016">2016</option>
+        <option value="2017">2017</option>
+        <option value="2018">2018</option>
+        <option value="2019">2019</option>
+    </select>
+    <script src="project_3.js"></script>
+</body>
+</html>
